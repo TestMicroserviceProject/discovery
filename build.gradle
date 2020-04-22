@@ -35,7 +35,7 @@ dependencyManagement {
 }
 
 bootJar {
-    archiveFileName = 'discovery.jar'
+    archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
 }
 
 test {
